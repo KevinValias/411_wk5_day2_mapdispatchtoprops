@@ -22,7 +22,7 @@ Clone this repo and run `npm i` and then `npm start`
 
 * Now, let's create an `action creator` called "addCar" that takes one parameter called "car". Have it return an object who's type is "ADD_CAR" and it's value is the car parameter.
 
-* Now we need to go to our `reducers.js` file and update the "cars" reducer. First, give it a second paramter called "action". This will represent whichever action is passed in on dispatch. No it's time to change this function and give it a switch statement. You can reference prior material for this but ultimately we want to switch on `(action.type)`, provide a case for `ADD_CAR` that returns a copy of the state array plus the new car (`[ ...state, action.value]`) and handle the default case that simply returns the state.
+* Now we need to go to our `reducers.js` file and update the "cars" reducer. First, give it a second paramter called "action". This will represent whichever action is passed in on dispatch. Now it's time to change this function and give it a switch statement. You can reference prior material for this but ultimately we want to switch on `(action.type)`, provide a case for `ADD_CAR` that returns a copy of the state array plus the new car (`[ ...state, action.value]`) and handle the default case that simply returns the state.
 
 * We will be dispatching this action from the `AddCar` component so let's go look at that now. Notice there is a form that is collecting the input data. It happens in a dialog box that appears when you click the "Add Car" button on the dashboard page.
 
